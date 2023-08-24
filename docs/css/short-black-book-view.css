@@ -8,8 +8,8 @@
   height: 100%;
 }
 
-.flip-book .view .fnav {
-}
+/* .flip-book .view .fnav {
+} */
 
 .flip-book .view .prev, .flip-book .view .next {
   position: absolute;
@@ -126,6 +126,7 @@
 
 .flip-book .controls {
   position: relative;
+
 }
 
 .flip-book .controls .fnavbar {
@@ -251,9 +252,10 @@
 .ctrl .fnavbar .menu .active {
   background-color: #444;
 }
-.ctrl .fnavbar .menu .active:hover {
-  /*background-color: #444;*/
-}
+/* .ctrl .fnavbar .menu .active:hover {
+  background-color: #444;
+} 
+*/
 .ctrl .fnavbar .menu li:hover {
   background-color: #333;
   cursor: pointer;

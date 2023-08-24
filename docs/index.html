@@ -20,15 +20,12 @@
   
 <body>
 
-  <div class="container" id="container">
-
-  </div>
+  <div class="container" id="container"></div>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/html2canvas.min.js"></script>
   <script src="js/three.min.js"></script>
   <script src="js/pdf.min.js"></script>
-
 
   <script src="js/3dflipbook.min_copy.js"></script>
 
@@ -38,15 +35,11 @@
       pages: 5,
       template: {
         html: 'templates/default-book-view.html',
-        styles: [
-          'css/white-book-view.css'
-        ],
-        links: [
-          {
+        styles: ['css/short-black-book-view.css'],
+        links: [{
             rel: 'stylesheet',
-            href: 'css/font-awesome.min.css'
-          }
-        ],
+            href: 'css/font-awesome.min_copy.css'
+        }],
         script: 'js/default-book-view.js'
       }
     });

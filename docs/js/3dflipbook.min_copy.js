@@ -6065,10 +6065,25 @@
           }),
           (BookView.prototype.getTemplate = function () {
             return {
+
+
+
+//  ------------------------------------
+
+
               html: "templates/default-book-view.html",
-              styles: ["css/black-book-view.css"],
-              links: [{ rel: "stylesheet", href: "css/font-awesome.min.css" }],
+              styles: ["css/short-black-book-view.css"],
+              links: [{ rel: "stylesheet", href: "css/font-awesome.min_copy.css" }],
               script: "js/default-book-view.js",
+
+//  ------------------------------------
+
+
+
+
+
+
+
             };
           }),
           BookView
