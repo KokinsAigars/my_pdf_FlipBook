@@ -1,0 +1,18 @@
+/*
+* my_pdf_3d_FlipBook
+* Version 1.0.0 Built on 2023.08.24
+*
+*		| SCSS (CSS) |	_body
+*
+* Contributor(s): Aigars Kokins
+*/
+
+@use "../global/colors";
+
+html, body {
+	height: auto;
+	width: auto;
+	margin: 0;}
+  .body {
+	background-color: map-get(colors.$GC, GC_BG_underbelly);
+	line-height: 1.5;}

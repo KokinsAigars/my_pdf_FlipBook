@@ -1,0 +1,30 @@
+//TypeScript compiler	//https://www.typescriptlang.org/docs/handbook/compiler-options.html
+//tsc --all
+{
+  "compilerOptions": {
+
+	"target": "es6",
+	"module": "system",
+	"esModuleInterop": true,
+	"moduleResolution": "node",
+
+	"lib": ["dom","es6","dom.iterable","scripthost"],
+	"skipLibCheck": true,
+
+	"outFile": "docs/main.js",
+    "outDir": "docs/",
+    "rootDirs": ["src/ts/"],
+
+	"removeComments": true,
+
+	"strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": false,
+    "forceConsistentCasingInFileNames": true,
+
+	"typeRoots": ["./node_modules/@types", "./src/types"]
+
+	},
+
+	"exclude": ["node_modules"]
+}

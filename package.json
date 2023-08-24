@@ -1,0 +1,39 @@
+{
+  "name": "MyPDF3DFlipBook",
+  "version": "1.0.0",
+  "description": "pdf 3D FlipBook",
+  "main": "docs/index.html",
+  "dependencies": {
+    "@emailjs/browser": "^3.6.2",
+    "config": "^3.3.7",
+    "emailjs": "^4.0.1",
+    "express": "^4.18.1",
+    "serve-favicon": "^2.5.0",
+    "spdy": "^4.0.2",
+    "typescript": "^4.6.4"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "nodemon": "^2.0.16",
+    "sass": "^1.52.1"
+  },
+  "scripts": {
+    "start": "lite-server",
+    "devStart": "nodemon server.js",
+    "compile:sass": "node-sass --recursive --watch src/scss --output docs/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KokinsAigars/my_pdf_FlipBook.git"
+  },
+  "keywords": [
+    "pdf",
+    "flipbook"
+  ],
+  "author": "Aigars Kokins",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KokinsAigars/my_pdf_FlipBook"
+  },
+  "homepage": "https://kokinsaigars.github.io/my_pdf_FlipBook/"
+}
