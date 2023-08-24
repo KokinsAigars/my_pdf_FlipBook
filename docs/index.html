@@ -18,9 +18,8 @@
 </head>
 
 <body class="body">
-	
-	<div class="flip-book-container solid-container" src="src/PDF/DoDEC.pdf">
-
+	<div class="solid-container">
+		<div class="flip-book-container solid-container" src="src/PDF/DoDEC.pdf"></div>
 	</div>
 
 	<script src="js/jquery.min.js"></script>
@@ -29,6 +28,39 @@
 	<script src="js/pdf.min.js"></script>
 
 	<script src="js/3dflipbook.min.js"></script>
+
+
+	<script type="text/javascript">
+		$('.solid-container').FlipBook({pdf: 'src/FoxitPdfSdk.pdf'});
+	</script>
+
+	<!-- To create 3D FlipBook from images -->
+	<script type="text/javascript">
+	$('.solid-container').FlipBook({
+		pageCallback: function(n) {
+		return {
+			type: 'image',
+			src: 'src/theKingIsBlack/'+(n+1)+'.jpg',
+			interactive: false
+		};
+		},
+		pages: 40
+	});
+	</script>
+
+	<!-- To create 3D FlipBook from HTMLs -->
+	<script type="text/javascript">
+	$('.solid-container').FlipBook({
+		pageCallback: function(n) {
+		return {
+			type: 'html',
+			src: 'src/preview/'+(n%3+1)+'.html',
+			interactive: true
+		};
+		},
+		pages: 10
+	});
+	</script>
 
 </body>
 </html>
