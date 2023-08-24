@@ -7,12 +7,38 @@
 * Contributor(s): Aigars Kokins
 */
 
-@use "../global/colors";
+// @use "../global/colors";
 
 html, body {
-	height: auto;
-	width: auto;
-	margin: 0;}
-  .body {
-	background-color: map-get(colors.$GC, GC_BG_underbelly);
-	line-height: 1.5;}
+	background-color: #333;
+	margin: 0;
+	padding: 0;
+}
+.container {
+	height: 95vh;
+	width: 95%;
+	margin: 20px auto;
+	border: 1px solid rgb(0, 0, 0);
+	// box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+.fullscreen {
+	background-color: #333;
+}
+.examples {
+	position: relative;
+}
+.examples div {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	padding-top: 10px;
+	font-size: 20px;
+}
+.examples a {
+	color: #ccc;
+	text-decoration: none;
+	padding: 0 10px;
+}
+.examples a:hover {
+	color: #fff;
+}
